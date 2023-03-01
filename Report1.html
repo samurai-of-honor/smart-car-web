@@ -60,26 +60,36 @@
         event.preventDefault();
         switch (num) {
             case 1:
-                document.getElementById("cell").innerHTML = "Тема, мета ЛР №1 Місце розташування сайту, звіту";
+                document.getElementById("cell").innerHTML = `
+                  <h4>Тема:</h4> <p>СТРУКТУРА HTML-ДОКУМЕНТА. ВИБІР ПРЕДМЕТНОЇ ГАЛУЗІ. РОБОТА З ПОСИЛАННЯМИ, ТАБЛИЦЯМИ, ЗОБРАЖЕННЯМИ, СПИСКАМИ в HTML-ДОКУМЕНТІ.</p>
+
+                  <h4>Мета:</h4> <p>придбати практичні навички роботи з HTML-документом, таблицями, зображеннями, посиланнями, списками, формами.
+                  Створити шаблон звітного HTML-документом для відображення результатів роботи всіх лабораторних робіт.</p>
+
+                  <h4>Сайт:</h4> <a href="https://samurai-of-honor.github.io/smart-car-web/src/" target="_blank">smart-автомобілі</a><br>
+                  <h4>Звіт:</h4> <a href="https://samurai-of-honor.github.io/smart-car-web/Report1" target="_blank">Звіт 1</a>`;
                 break;
             case 2:
-                document.getElementById("cell").innerHTML = "Опис предметного середовища";
+                document.getElementById("cell").innerHTML = `<img src="img/report1.2.png" alt="main page">`;
                 break;
             case 3:
-                document.getElementById("cell").innerHTML = "HTML-код головної сторінки WEB-застосунку";
+                document.getElementById("cell").innerHTML = `<h4>Головна сторінка додатку:</h4> <a href="https://github.com/samurai-of-honor/smart-car-web/blob/main/src/index.html" target="_blank">код</a>
+                <h4>Сторіка опису додатку:</h4> <a href="https://github.com/samurai-of-honor/smart-car-web/blob/main/src/app-description.html" target="_blank">код</a>
+                <h4>Звіт до лабораторної 1:</h4> <a href="https://github.com/samurai-of-honor/smart-car-web/blob/main/Report1.html" target="_blank">код</a>`;
                 break;
             case 4:
-                document.getElementById("cell").innerHTML = "Зовнішній вигляд головної сторінки WEB-застосунку";
+                document.getElementById("cell").innerHTML = `<img src="img/report1.1.png" alt="main page">`;
                 break;
             case 5:
-                document.getElementById("cell").innerHTML = "ВИСНОВКИ до ЛР №1";
+                document.getElementById("cell").innerHTML = `<h4>ВИСНОВКИ до ЛР №1</h4>
+                <p>Виконавши лабораторну та самостійну роботу 1, ми опанували роботу з HTML-документом та познайомились з багатьма тегами,
+                за допомогою яких створили головну сторіну майбутнього проекту та звітний документ.</p>`;
                 break;
             case 6:
-                document.getElementById("cell").innerHTML = "ВИКОНАВЦІ";
+                document.getElementById("cell").innerHTML = `<h4>ВИКОНАВЦІ</h4><br><p>ІП-03 Баран Павло, ІП-03 Безус Данило</p>`;
                 break;
             default:
                 document.getElementById("cell").innerHTML = "Код зломався";
         }
     }
 </script>
-
