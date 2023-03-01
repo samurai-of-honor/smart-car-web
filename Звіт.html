@@ -1,0 +1,84 @@
+<p>&nbsp;</p>
+<h2 style="text-align: center;"><strong>ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ<br />З ДИСЦИПЛІНИ "WEB-ОРІЄНТОВАНІ ТЕХНОЛОГІЇ.<br />ОСНОВИ FRONTEND ТА BACKEND РОЗРОБОК"</strong><strong></strong></h2>
+<h2 style="text-align: center;"><strong>БРИГАДА №9</strong></h2>
+<p><strong>Студенти: гр. ІП-03 Баран Павло, гр. ІП-03 Безус Данило</strong></p>
+<table>
+<form action="Звіт1.html" target="_blank">
+<button style ="background: yellow; border-radius: 10px; height: 60px; width: 100px;">
+  Лабораторна робота №1</button>
+</form>
+<form action="" target="_self">
+<button style ="background: white; border-radius: 10px; height: 60px; width: 100px;">
+  Лабораторна робота №2</button>
+</form>
+<form action="" target="_self">
+<button style ="background: white; border-radius: 10px; height: 60px; width: 100px;">
+  Лабораторна робота №3</button>
+</form>
+<form action="" target="_self">
+<button style ="background: white; border-radius: 10px; height: 60px; width: 100px;">
+  Лабораторна робота №4</button>
+</form>
+<form action="" target="_self">
+<button style ="background: white; border-radius: 10px; height: 60px; width: 100px;">
+  Лабораторна робота №5</button>
+</form>
+<form action="" target="_self">
+<button style ="background: white; border-radius: 10px; height: 60px; width: 100px;">
+  Лабораторна робота №6</button>
+</form>
+<form action="" target="_self">
+<button style ="background: white; border-radius: 10px; height: 60px; width: 100px;">
+  Лабораторна робота №7</button>
+</form>
+<form action="" target="_self">
+<button style ="background: white; border-radius: 10px; height: 60px; width: 100px;">
+  Лабораторна робота №8</button>
+</<table>
+<p></p>
+<table border="1" style="border-collapse: collapse; position:absolute; left:230; top:310; width: 580; height: 440;">
+  <tr>
+    <td id="cell" style="text-align: center;">
+    <p><strong>Місце виведення інформації</strong></p>
+    </td>
+  </tr>
+</table>
+<button onclick="changeText(1)" style ="background: white; border-radius: 20px; height: 60px; width: 210px;">
+<strong>Тема, мета ЛР №1 Місце розташування сайту, звіту</strong></button><br></br>
+<button onclick="changeText(2)" style ="background: white; border-radius: 20px; height: 60px; width: 210px;">
+<strong>Опис предметного середовища</strong></button><br></br>
+<button onclick="changeText(3)" style ="background: white; border-radius: 20px; height: 60px; width: 210px;">
+<strong>HTML-код головної сторінки WEB-застосунку</strong></button><br></br>
+<button onclick="changeText(4)" style ="background: white; border-radius: 20px; height: 60px; width: 210px;">
+<strong>Зовнішній вигляд головної сторінки WEB-застосунку</strong></button><br></br>
+<button onclick="changeText(5)" style ="background: white; border-radius: 20px; height: 60px; width: 210px;">
+<strong>ВИСНОВКИ до ЛР №1</strong></button><br></br>
+<button onclick="changeText(6)" style ="background: white; border-radius: 20px; height: 60px; width: 210px;">
+<strong>ВИКОНАВЦІ</strong></button><br></br>
+<script>
+function changeText(num) {
+  event.preventDefault();
+  switch (num) {
+				case 1:
+					document.getElementById("cell").innerHTML = "Тема, мета ЛР №1 Місце розташування сайту, звіту";
+					break;
+				case 2:
+					document.getElementById("cell").innerHTML = "Опис предметного середовища";
+					break;
+				case 3:
+					document.getElementById("cell").innerHTML = "HTML-код головної сторінки WEB-застосунку";
+					break;
+        case 4:
+  				document.getElementById("cell").innerHTML = "Зовнішній вигляд головної сторінки WEB-застосунку";
+  				break;
+        case 5:
+  				document.getElementById("cell").innerHTML = "ВИСНОВКИ до ЛР №1";
+  				break;
+  			case 6:
+  				document.getElementById("cell").innerHTML = "ВИКОНАВЦІ";
+  				break;
+				default:
+					document.getElementById("cell").innerHTML = "Код зломався";
+        }
+}
+</script>
