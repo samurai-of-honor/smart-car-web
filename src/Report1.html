@@ -1,0 +1,95 @@
+<h2 style="text-align: center;"><strong>ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ<br />З ДИСЦИПЛІНИ "WEB-ОРІЄНТОВАНІ ТЕХНОЛОГІЇ.<br />ОСНОВИ FRONTEND ТА BACKEND РОЗРОБОК"</strong><strong></strong></h2>
+<h2 style="text-align: center;"><strong>БРИГАДА №9</strong></h2>
+<p><strong>Студенти: гр. ІП-03 Баран Павло, гр. ІП-03 Безус Данило</strong></p>
+<table>
+    <form action="Report1.html" target="_self">
+        <button style="background: yellow; border-radius: 10px; height: 60px; width: 100px;">
+            Лабораторна робота №1</button>
+    </form>
+    <form action="Report2.html" target="_self">
+        <button style="background: white; border-radius: 10px; height: 60px; width: 100px;">
+            Лабораторна робота №2</button>
+    </form>
+    <form action="" target="_self">
+        <button style="background: white; border-radius: 10px; height: 60px; width: 100px;">
+            Лабораторна робота №3</button>
+    </form>
+    <form action="" target="_self">
+        <button style="background: white; border-radius: 10px; height: 60px; width: 100px;">
+            Лабораторна робота №4</button>
+    </form>
+    <form action="" target="_self">
+        <button style="background: white; border-radius: 10px; height: 60px; width: 100px;">
+            Лабораторна робота №5</button>
+    </form>
+    <form action="" target="_self">
+        <button style="background: white; border-radius: 10px; height: 60px; width: 100px;">
+            Лабораторна робота №6</button>
+    </form>
+    <form action="" target="_self">
+        <button style="background: white; border-radius: 10px; height: 60px; width: 100px;">
+            Лабораторна робота №7</button>
+    </form>
+    <form action="" target="_self">
+        <button style="background: white; border-radius: 10px; height: 60px; width: 100px;">
+            Лабораторна робота №8</button>
+    </form>
+</table>
+<p></p>
+<table border="1" style="border-collapse: collapse; position:absolute; left:230; top:270; width: 580; height: 440;">
+    <tr>
+        <td id="cell" style="text-align: center;">
+            <p><strong>Місце виведення інформації</strong></p>
+        </td>
+    </tr>
+</table>
+<button onclick="changeText(1)" style="background: white; border-radius: 20px; height: 60px; width: 210px;">
+    <strong>Тема, мета ЛР №1 Місце розташування сайту, звіту</strong></button><br></br>
+<button onclick="changeText(2)" style="background: white; border-radius: 20px; height: 60px; width: 210px;">
+    <strong>Опис предметного середовища</strong></button><br></br>
+<button onclick="changeText(3)" style="background: white; border-radius: 20px; height: 60px; width: 210px;">
+    <strong>HTML-код головної сторінки WEB-застосунку</strong></button><br></br>
+<button onclick="changeText(4)" style="background: white; border-radius: 20px; height: 60px; width: 210px;">
+    <strong>Зовнішній вигляд головної сторінки WEB-застосунку</strong></button><br></br>
+<button onclick="changeText(5)" style="background: white; border-radius: 20px; height: 60px; width: 210px;">
+    <strong>ВИСНОВКИ до ЛР №1</strong></button><br></br>
+<button onclick="changeText(6)" style="background: white; border-radius: 20px; height: 60px; width: 210px;">
+    <strong>ВИКОНАВЦІ</strong></button><br></br>
+<script>
+    function changeText(num) {
+        event.preventDefault();
+        switch (num) {
+            case 1:
+                document.getElementById("cell").innerHTML = `
+                  <h4>Тема:</h4> <p>СТРУКТУРА HTML-ДОКУМЕНТА. ВИБІР ПРЕДМЕТНОЇ ГАЛУЗІ. РОБОТА З ПОСИЛАННЯМИ, ТАБЛИЦЯМИ, ЗОБРАЖЕННЯМИ, СПИСКАМИ в HTML-ДОКУМЕНТІ.</p>
+
+                  <h4>Мета:</h4> <p>придбати практичні навички роботи з HTML-документом, таблицями, зображеннями, посиланнями, списками, формами.
+                  Створити шаблон звітного HTML-документом для відображення результатів роботи всіх лабораторних робіт.</p>
+
+                  <h4>Сайт:</h4> <a href="https://samurai-of-honor.github.io/smart-car-web/src/" target="_blank">smart-автомобілі</a><br>
+                  <h4>Звіт:</h4> <a href="https://samurai-of-honor.github.io/smart-car-web/src/Report1" target="_blank">Звіт 1</a>`;
+                break;
+            case 2:
+                document.getElementById("cell").innerHTML = `<img src="../img/report1/report1.2.png" alt="main page">`;
+                break;
+            case 3:
+                document.getElementById("cell").innerHTML = `<h4>Головна сторінка додатку:</h4> <a href="https://github.com/samurai-of-honor/smart-car-web/blob/main/src/index.html" target="_blank">код</a>
+                <h4>Сторіка опису додатку:</h4> <a href="https://github.com/samurai-of-honor/smart-car-web/blob/main/src/app-description.html" target="_blank">код</a>
+                <h4>Звіт до лабораторної 1:</h4> <a href="https://github.com/samurai-of-honor/smart-car-web/blob/main/Report1.html" target="_blank">код</a>`;
+                break;
+            case 4:
+                document.getElementById("cell").innerHTML = `<img src="../img/report1/report1.1.png" alt="main page">`;
+                break;
+            case 5:
+                document.getElementById("cell").innerHTML = `<h4>ВИСНОВКИ до ЛР №1</h4>
+                <p>Виконавши лабораторну та самостійну роботу 1, ми опанували роботу з HTML-документом та познайомились з багатьма тегами,
+                за допомогою яких створили головну сторіну майбутнього проекту та звітний документ.</p>`;
+                break;
+            case 6:
+                document.getElementById("cell").innerHTML = `<h4>ВИКОНАВЦІ</h4><br><p>ІП-03 Баран Павло, ІП-03 Безус Данило</p>`;
+                break;
+            default:
+                document.getElementById("cell").innerHTML = "Код зломався";
+        }
+    }
+</script>
